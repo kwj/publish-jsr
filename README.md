@@ -45,7 +45,7 @@ That's all done.
 
 ## How to use
 
-1. Set the version you want to publish in the version field, and commit the
+1. Set the version you want to publish in the `version` field, and commit the
    configuration file and push to the repository to the github.com server.
 
 2. Add a tag and push it to the remote repository on the github.com server,
