@@ -51,7 +51,7 @@ That's all done.
 ## How to use
 
 1. Set the version you want to publish in the `version` field, and commit the
-   configuration file and push to the repository to the github.com server.
+   configuration file and push to the repository on the Github site.
 
 2. Trigger the event that you specified.
 
