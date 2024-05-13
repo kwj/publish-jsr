@@ -1,10 +1,7 @@
 # Publish to JSR
 
-This workflow can publish a pacakge to the
-[JavaScript Registory](https://jsr.io/) (JSR) when a git tag is added.
-
-This enables for a separate timing for committing the configuration file
-(`jsr.json` or `deno.json`) and publishing a package.
+This workflow tiggers a git tag to publish a package to the
+[JavaScript Registory](https://jsr.io/) (JSR).
 
 ## Limitations
 
@@ -30,6 +27,14 @@ on:
       - '*'
 ```
 
+If you want to run it when released, configure as follows.
+
+```yaml
+on:
+  release:
+    types: [published]
+```
+
 ### Set your configuration file name
 
 By default, the name of the configuration file is `jsr.json`.
@@ -48,8 +53,7 @@ That's all done.
 1. Set the version you want to publish in the `version` field, and commit the
    configuration file and push to the repository to the github.com server.
 
-2. Add a tag and push it to the remote repository on the github.com server,
-   OR, create a release with a new tag on the github.com website.
+2. Trigger the event that you specified.
 
 ## License
 
